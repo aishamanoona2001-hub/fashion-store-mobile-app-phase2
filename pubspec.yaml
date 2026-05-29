@@ -1,0 +1,51 @@
+name: fashion_store
+description: A Fashion Store e-commerce mobile application. University Assignment.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ─── Firebase ────────────────────────────────────────────────────────────────
+  # Firebase Core — required base for all Firebase services.
+  firebase_core: ^3.0.0
+  # Firebase Auth — handles user registration, login, and logout.
+  firebase_auth: ^5.0.0
+  # Cloud Firestore — NoSQL database for products, orders, and user data.
+  cloud_firestore: ^5.0.0
+
+  # ─── State Management ────────────────────────────────────────────────────────
+  # Provider — simple, efficient, and officially recommended state management.
+  provider: ^6.1.2
+
+  # ─── Local Storage ───────────────────────────────────────────────────────────
+  # Shared Preferences — used to persist cart data locally between app launches.
+  shared_preferences: ^2.3.3
+
+  # ─── UI & Utilities ──────────────────────────────────────────────────────────
+  # Cached Network Image — loads and caches product images from URLs efficiently.
+  cached_network_image: ^3.4.1
+  # Google Fonts (Poppins) — clean, modern typography for the fashion aesthetic.
+  google_fonts: ^6.2.1
+  # Flutter Spinkit — provides polished loading animations.
+  flutter_spinkit: ^5.2.1
+  # Intl — for formatting dates on the order history screen.
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Flutter Lints — enforces Dart best practices during development.
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ─── Assets ──────────────────────────────────────────────────────────────────
+  # Declare the assets directory so Flutter bundles the placeholder image.
+  assets:
+    - assets/images/
